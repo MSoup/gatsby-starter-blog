@@ -81,6 +81,8 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  /* adding in my own bg color */
+  
 }
 
 footer {
@@ -319,6 +321,25 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+/* My own stuff */
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links a {
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  transform: scale(1.1);
+}
+
+#gatsby-focus-wrapper {
+  background: linear-gradient(
+132deg, rgba(255,255,255,1) 0%, rgba(199,199,255,1) 66%, rgba(0,212,255,1) 100%);
+}
 /* Media queries */
 
 @media (max-width: 42rem) {
