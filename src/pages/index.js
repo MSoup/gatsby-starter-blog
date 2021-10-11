@@ -19,12 +19,27 @@ const LandingPage = ({ data, location }) => {
       <StaticImage 
         alt="I'm a cat"
         src="../images/cat.webp" />
+
+      
       <Bio />
     </Layout>
   )
 }
 
 export default LandingPage
+
+// export const pageQuery = graphql`
+//   query IndexPageQuery {
+//     markdownRemark(fileAbsolutePath: { regex: "/hero-text.md/" }) {
+//       frontmatter {
+//         author
+//         date
+//         title
+//       }
+//     }
+//   }
+//   `
+
 
 export const pageQuery = graphql`
   query {

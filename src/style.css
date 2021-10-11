@@ -78,7 +78,8 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  /* font-family: var(--font-body); */
+  font-family: monospace; 
   font-size: var(--fontSize-1);
   color: var(--color-text);
   /* adding in my own bg color */
@@ -245,7 +246,7 @@ a:focus {
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
+  padding: var(--spacing-1) var(--spacing-4);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -257,6 +258,8 @@ a:focus {
 }
 
 .main-heading {
+  font-family: monospace;
+
   font-size: var(--fontSize-7);
   margin: 0;
 }
@@ -291,6 +294,7 @@ a:focus {
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
+  margin-top: var(--spacing-4);
 }
 
 .bio p {
@@ -326,6 +330,7 @@ a:focus {
 .navbar-links {
   display: flex;
   justify-content: space-between;
+  padding: 2%;
 }
 
 .navbar-links a {
@@ -337,9 +342,25 @@ a:focus {
 }
 
 #gatsby-focus-wrapper {
-  background: linear-gradient(
-132deg, rgba(255,255,255,1) 0%, rgba(199,199,255,1) 66%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(-45deg, rgba(255,255,255,1), rgba(199,199,255,1), rgb(180, 242, 255), #a6fae6);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
 /* Media queries */
 
 @media (max-width: 42rem) {
